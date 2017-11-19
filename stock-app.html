@@ -43,7 +43,7 @@
 	month[10] = "Nov";
 	month[11] = "Dec";
     
-    socket = new WebSocket("wss://stocks.mnet.website");
+    socket = new WebSocket("ws://stocks.mnet.website");
     
     socket.onmessage = function (e) {
         var obj = JSON.parse(e.data);
